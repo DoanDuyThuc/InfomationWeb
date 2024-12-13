@@ -80,7 +80,7 @@ const DeveloperIntro = ({ fadeOut, setFadeOut, lines, typingSpeed = 15 }) => {
                 setFadeOut(true);
             }, 500); // Thời gian chờ trước khi mờ dần
         }
-    }, [isTypingComplete]);
+    }, [isTypingComplete, setFadeOut]);
 
     // Nếu đã mờ dần, không hiển thị component
     if (fadeOut) {

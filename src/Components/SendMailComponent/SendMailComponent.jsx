@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './SendMailComponent.scss'
 import emailjs from '@emailjs/browser';
 
@@ -36,9 +36,6 @@ export const SendMailComponent = () => {
                 }
             );
     };
-
-    console.log(emailData);
-
 
     return (
         <section className='SendMail'>

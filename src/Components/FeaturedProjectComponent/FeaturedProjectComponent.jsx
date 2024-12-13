@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import './FeaturedProjectComponent.scss'
 import { motion, useInView } from 'framer-motion'
 import Slider from 'react-slick'
