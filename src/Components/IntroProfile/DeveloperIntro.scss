@@ -1,0 +1,27 @@
+.developer-intro {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 18, 18);
+    font-family: "JetBrains Mono", monospace;
+    position: fixed;
+    inset: 0px;
+    z-index: 1000;
+    padding: 1rem;
+
+    &__content {
+
+        background-color: rgb(30, 30, 30);
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+        max-width: 500px;
+        width: 90%;
+        color: rgb(255, 255, 255);
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+        font-size: 14px;
+    }
+}

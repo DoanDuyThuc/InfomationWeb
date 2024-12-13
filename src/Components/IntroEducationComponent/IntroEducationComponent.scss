@@ -1,0 +1,55 @@
+.IntroEducation {
+    padding: 48px 0px;
+    max-width: 1200px;
+    margin: 0px auto;
+
+    &>h2 {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 2.5rem;
+        color: pink;
+        margin-bottom: 32px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    &__Content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 32px;
+
+        &__Title {
+            background: rgb(30, 30, 30);
+            border-radius: 8px;
+            padding: 32px;
+            transition: transform 0.3s, background-color 0.3s;
+
+            &:hover {
+                background: rgb(42, 42, 42);
+                transform: translateY(-5px) !important;
+            }
+
+            &>h3 {
+                font-family: "JetBrains Mono", monospace;
+                font-size: 1.5rem;
+                color: rgb(255, 255, 255);
+                margin-bottom: 16px;
+                margin-top: 0;
+            }
+
+            &>h4 {
+                font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+                font-size: 1.1rem;
+                color: pink;
+                margin-top: 0;
+                margin-bottom: 8px;
+            }
+
+            &>p {
+                font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+                color: rgb(176, 176, 176);
+                margin-bottom: 16px;
+                margin-top: 0;
+            }
+        }
+    }
+}

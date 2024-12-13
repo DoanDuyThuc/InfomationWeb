@@ -1,0 +1,89 @@
+.IntroSkillComponent {
+    padding: 32px 0px;
+    background: transparent;
+
+    &>h2 {
+        font-size: clamp(2rem, 5vw, 2.5rem);
+        color: pink;
+        margin-bottom: 32px;
+        text-align: center;
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: 0;
+    }
+
+    &__Content {
+        &>h3 {
+            font-size: 1.8rem;
+            color: rgb(255, 255, 255);
+            margin-bottom: 32px;
+            position: relative;
+            padding-left: 16px;
+            margin-top: 0;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 4px;
+                height: 24px;
+                background: pink;
+            }
+        }
+
+        &__List {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+
+            &__Item {
+                display: flex;
+                align-items: center;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+                position: relative;
+                background: 0% 0% / auto rgb(30, 30, 30);
+                border-radius: 8px;
+                padding: 16px;
+                gap: 16px;
+                transition: transform 0.3s, box-shadow 0.3s;
+                overflow: hidden;
+
+                &:hover {
+                    transform: scale(1.05) !important;
+                }
+
+                &__Left {
+                    font-size: 2.5rem;
+                    color: rgb(76, 175, 80);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 0 0 auto;
+                }
+
+                &__Right {
+                    flex: 1 1 0%;
+
+                    &>h4 {
+                        font-size: 1.2rem;
+                        color: rgb(255, 255, 255);
+                        margin-bottom: 8px;
+                        margin-top: 0;
+                    }
+
+                    &>div {
+                        display: inline-block;
+                        color: pink;
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                        border-radius: 8px;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

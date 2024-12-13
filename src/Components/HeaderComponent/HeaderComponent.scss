@@ -1,0 +1,70 @@
+.HeaderComponent {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0px 24px;
+
+    &__Title {
+        max-width: 800px;
+
+        &>h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin-bottom: 16px;
+            color: pink;
+            line-height: 1.2;
+            margin-top: 0;
+            font-family: "JetBrains Mono", monospace;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        &>h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: pink;
+            margin-bottom: 24px;
+            margin-top: 0;
+            font-family: "JetBrains Mono", monospace;
+            font-weight: bold;
+        }
+
+        &>p {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: rgb(176, 176, 176);
+            margin-bottom: 32px;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 600px;
+            font-weight: bold;
+
+            &>span {
+                background: linear-gradient(45deg,
+                        rgb(255, 107, 107) 0%,
+                        rgb(78, 205, 196) 25%,
+                        rgb(69, 182, 73) 50%,
+                        rgb(78, 205, 196) 75%,
+                        rgb(255, 107, 107) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        &__Contact {
+            display: flex;
+            gap: 16px;
+            margin-top: 32px;
+
+            &>a {
+                color: rgb(255, 255, 255);
+                font-size: 1.8rem;
+                transition: 0.2s ease-in-out;
+
+                &:hover {
+                    color: pink;
+                }
+            }
+        }
+    }
+
+}
